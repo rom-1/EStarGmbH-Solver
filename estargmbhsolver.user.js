@@ -2,7 +2,7 @@
 // @name         EstarGmbH Solver
 // @namespace    http://tampermonkey.net/
 // @version      0.3
-// @description  Klickt nach Öffnen einer Aufgabe bis zu den Lösungen durch, die Lösungen werden automatisch ausgefüllt. Im Endeffekt brauch man nichts weiteres tun, als die Aufgabe zu starten.
+// @description  Klickt nach Oeffnen einer Aufgabe bis zu den Loesungen durch, die Loesungen werden automatisch ausgefuellt. Im Endeffekt brauch man nichts weiteres tun, als die Aufgabe zu starten.
 // @author       Martin J.
 // @match        https://*.estargmbh.de/admin/*
 // @grant        none
@@ -27,7 +27,7 @@ setTimeout(function() {
 setTimeout(function() {
 if ($("#btn").text()=='speichern') {
     $("#gelesen").click()
-    $("#nonPrivateUse").attr('checked', true); // Für Betriebliche Kommunikationsmittel v1.1, Eintragen des Wertes #nonPrivateUse = keine private Nutzung, für Private Nutzung auf #privateUse ändern.
+    $("#nonPrivateUse").attr('checked', true); // Fuer Betriebliche Kommunikationsmittel v1.1, Eintragen des Wertes #nonPrivateUse = keine private Nutzung, für Private Nutzung auf #privateUse aendern.
     setTimeout(function() {
         $("#btn").click()
         $('#btnNext').click()
