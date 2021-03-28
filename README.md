@@ -1,5 +1,8 @@
 # EStarGmbH-Solver
-A Tampermonkey / Greasemonkey Script which auto-solves the EStarGmbH Arbeitssicherheitsmodule Questionnaire
+A Tampermonkey / Greasemonkey Script which auto-solves the EStarGmbH Arbeitssicherheitsmodule Questionnaire.
+
+Main Author: Martin J.
+Use at your own risk!
 
 Instructions: 
  * Just install in Tampermonkey / Greasemonkey
