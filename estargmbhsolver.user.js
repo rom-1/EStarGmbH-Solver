@@ -1,22 +1,16 @@
 // ==UserScript==
-// @name         EstarGmbH Solver
+// @name         EstarGmbH Disable Wait Time
 // @namespace    http://tampermonkey.net/
-// @version      0.3
-// @description  Klickt nach Oeffnen einer Aufgabe bis zu den Loesungen durch, die Loesungen werden automatisch ausgefuellt. Im Endeffekt brauch man nichts weiteres tun, als die Aufgabe zu starten.
+// @version      0.4
+// @description  Disables the wait time on every page
 // @author       Martin J.
-// @match        https://*.estargmbh.de/admin/*
+// @match        https://*.estargmbh.de/*
 // @grant        none
 // @require 	   http://code.jquery.com/jquery-3.4.1.min.js
 // ==/UserScript==
 
 
 $(document).ready(function() {
-
-$("input[name^='denequa_']").each(function() {
-	if($(this).attr('value')=='1'){
-		$(this).prev('.inputCheckbox').attr('checked', true);
-	}
-});
 
 setTimeout(function() {
 	$('#btnFragebogenForm').click()
